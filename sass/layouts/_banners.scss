@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as v;
+
+.banner {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    height: calc(2vw + 30px);
+}
+
+.backblue {
+    background-color: v.$blue;
+}
+
+.backgreen {
+    background-color: v.$green;
+
+}

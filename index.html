@@ -3,108 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desktop</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Maxime Lebas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grid">
-        
-        
-        
-        <div href="" class="icons projets">
-            <img src="img/29.ico" alt="">
-            <p>Projets</p>
-        </div>
-        <div href="" class="icons contact">
-            <img src="img/1010.ico" alt="">
-            <p>contact</p>
-        </div>
-        <div href="" class="icons info">
-            <img src="img/978.ico" alt="">
-            <p>Infos</p>
-        </div>
-        <a href="" class="icons bin">
-            <img src="img/bin.ico" alt="">
-            <p>Recycle Bin</p>
-        </a>
-       
-        
-        
-        
-        
-        <div class="index popupinfo none">
-            <div class="infos">
-                <p class="title">Maxime Lebas</p>
-                <p>I'm currently at IIM - Digital School Paris.</p>
-                <p>I'm a 2nd year student in Coding Digital Innovation</p>
-                <p>About me, I'm passionate about the world of web development and plan to make a career in this field.</p>
-                <hr>
-                <p>©2023 Maxime Lebas</p>
-            </div>
-            <div class="about">
-                <p>Infos</p>
-                <div class="closeButton"><img src="img/cross.png" alt=""></div>
-            </div>
-        </div>
-        <div class="index popupcontact none"><u></u>
-            <div class="options">
-                <div>
-                    <p>File</p>
-                    <p>Edit</p>
-                    <p>Format</p>
-                    <p>View</p>
-                    <p>Help</p>
-                </div>
-            </div>
-            <div class="infos">
-                <p class="title">Contact Me</p>
-                <p>Mail : Maxandco2003@gmail.com</p>
-                <hr>
-                <p>©2023 Maxime Lebas</p>
-            </div>
-            <div class="about">
-                <p>*Contact_Me.txt - Notepad</p>
-                <div class="closeButtonC"><img src="img/cross.png" alt=""></div>
-            </div>
-        </div>
-        <div class="index popupprojet none"><u></u>
-            <div class="infos">
-                
-                <p class="title" >My GitHub profil -</p>
-                <a href="https://github.com/MokoyS" target="_blank">github.com/MokoyS</a>
-            </div>
-            <div class="about">
-                <p>My Projets</p>
-                <div class="closeButtonP"><img src="img/cross.png" alt=""></div>
-            </div>
-        </div>
-        
-        
-        
+    <div class="border">
     </div>
+    <!-- <img class="up" src="img/up-arrow.png" alt=""> -->
+    <!-- <p class="up">up</p> -->
     
-    <footer>
-        <button>
-            <img src="img/xp logo.png" alt="">
-            <p>Start</p>
-        </button>
-
-        <div>
-            <div id="current_date">
-                <script>
-                    document.getElementById("current_date").innerHTML = Date();
-                </script>
-            </div>            
-            <div>|</div>  
-            <div id="time"></div>
-            <div>|</div>    
-            <div class=" close">
-                <img src="img/242.ico" alt="">
-            </div>
+    <header>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </header>
+    <h1 class="animright" >MAXIME </h1>
+    <h1 class="animleft">LEBAS </h1>
+    <h2>PORTFOLIO</h2>
+    
+    <div class="banner backgreen" id="work">
+        <h3>WORK</h3>
+    </div>
+    <div class="work" >
+        <div class="container">
+            <a href="https://mokoys.github.io/Access_recycle/">
+                <div class="card">
+                    <img src="img/access.png" alt="">
+                    <div class="card-bottom">
+                        <h4>ACCESS RECYCLE  </h4>
+                    </div>
+                    <div class="bordertext"></div>
+                </div> 
+            </a>
+            <a href="lauraschott.com">
+                <div class="card">
+                    <img src="img/laura.png" alt="">
+                    <div class="card-bottom">
+                        <h4>LAURA PORTFOLIO</h4>
+                    </div>
+                    <div class="bordertext"></div>
+    
+                </div> 
+            </a>
+            <a href="https://ath06.com/">
+                <div class="card">
+                    <img src="img/ath.png" alt="">
+                    <div class="card-bottom">
+                        <h4>ATH06</h4>
+                    </div>
+                    <div class="bordertext"></div>
+    
+                </div> 
+            </a>
+            <a href="https://mokoys.github.io/Windows_XP_Portfolio/">
+                <div class="card">
+                    <img src="img/xp.png" alt="">
+                    <div class="card-bottom">
+                        <h4>WINDOWS XP PORTFOLIO</h4>
+                    </div>
+                    <div class="bordertext"></div>
+    
+                </div> 
+            </a>
             
         </div>
-    </footer>
-</body>
-</html>
+    </div>
+    <div class="banner backblue" id="about">
+        <h3>ABOUT</h3>
+    </div>
 
-<script src="js/main.js"></script>
+    <div class="about">
+        <div class="top">
+            <div class="pp"><img src="img/IMG_0463.jpg" alt=""></div>
+            <div class="text">
+                <h6>Hello !</h5>
+                <h5>Je suis Maxime Lebas</h4>
+                <h6>Apprenti développeur web Front-end 👨‍💻 <br> Étudiant à IIM - Institut de l'internet et du multimédia</h5>
+                
+            </div>
+        </div>
+    </div>
+
+<script src="main.js"></script>    
+</body>
+
+<footer>
+
+</footer>
+</html>

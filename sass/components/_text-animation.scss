@@ -1,0 +1,71 @@
+/* for Firefox */
+@-moz-keyframes my-animation-left {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-85%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation-left {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-85%); }
+  }
+  
+  @keyframes mymy-animation-left {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-85%);
+      -webkit-transform: translateX(-85%);
+      transform: translateX(-85%);
+    }
+}
+
+@-moz-keyframes my-animation-right {
+    from { -moz-transform: translateX(-100%); }
+    to { -moz-transform: translateX(80%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation-right {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(80%); }
+  }
+  
+  @keyframes mymy-animation-right {
+    from {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    to {
+      -moz-transform: translateX(80%);
+      -webkit-transform: translateX(80%);
+      transform: translateX(80%);
+    }
+}
+
+.animleft {
+    
+    -moz-animation: my-animation-left 8s linear infinite;
+    -webkit-animation: my-animation-left 8s linear infinite;
+    animation: my-animation-left 8s linear infinite;
+    z-index: -10;
+
+}
+
+.animright {
+    
+    -moz-animation: my-animation-right 8s linear infinite;
+    -webkit-animation: my-animation-right 8s linear infinite ;
+    animation: my-animation-right 8s linear infinite ;
+    z-index: -10;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }

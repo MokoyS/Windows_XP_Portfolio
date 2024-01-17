@@ -1,0 +1,84 @@
+@use '../abstracts/variables' as v;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: v.$back-color;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #000;
+    font-family: v.$primary-font;
+    font-size: 20vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 0.8;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px
+    
+}
+h2 {
+    color: #000;
+    font-family: v.$primary-font;
+    font-size: 8vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+     background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+h3 {
+    color: #000;
+    font-family: v.$primary-font;
+    font-size: calc(1.5vw + 10px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 10px 0;
+}
+h4 {
+    color: #000;
+    font-family: v.$primary-font;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+ul a {
+    color: #000;
+    font-family: v.$primary-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+}
+

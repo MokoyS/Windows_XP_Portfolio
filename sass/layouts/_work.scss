@@ -1,0 +1,73 @@
+@use '../abstracts/variables' as v;
+
+.work {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        padding-top: 30px;
+
+        display:grid;
+
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+
+        gap: 40px;
+
+        .card {
+
+            position: relative;
+            img{
+                height: 380px;
+                width: 380px;
+                transition: all 0.5s;
+            }
+            .card-bottom {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                
+                
+            }
+
+            .bordertext {
+                position: absolute;
+                bottom:0;
+                height: 20px;
+                width: 225px;
+                bottom: 0;
+                background-color: v.$green;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    
+}
+
+
+//HOVER 
+
+.work .container .card img:nth-child(1):hover {
+    transform: scale(1.03);
+}
+
+// RESPONSIVE 
+
+@media screen and (max-width: 930px) {
+    .work {
+        .container {
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+
+            .card {
+                img {
+                    height: 280px;
+                    width: 280px;  
+                }
+            }
+        }
+    }
+}
